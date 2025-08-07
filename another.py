@@ -1,5 +1,5 @@
 from pyannote.audio import Pipeline
-key = "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"
+key = "huggingface_auth_key"
 pipeline = Pipeline.from_pretrained("pyannote/speaker-diarization-3.1", use_auth_token=key)
 
 
@@ -10,3 +10,4 @@ diarization = pipeline(r"C:\Users\Neeraj\Desktop\model\audio\2830-3980-0043.wav"
 # with open("audio.rttm", "w") as rttm:
 #     diarization.write_rttm(rttm)
 print(diarization)
+
