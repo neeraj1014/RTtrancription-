@@ -6,7 +6,7 @@ from real_time_app.load_models import base_model, stt_model, osd_model,vad_model
 from real_time_app.helper import get_np_n_torch_array
 from real_time_app.dummy import check
 
-KEY = "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"
+KEY = "huggingface_auth_key"
 INT16_MAX_ABS_VALUE = 32768.0
 
 # Parameters for audio capture
@@ -87,3 +87,4 @@ finally:
 
 
 sys.exit(0)
+
